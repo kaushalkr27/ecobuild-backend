@@ -27,3 +27,4 @@ artifacts:
     - app.js
     - package.json
     - config.json
+    - helpers/*
