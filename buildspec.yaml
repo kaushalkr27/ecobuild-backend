@@ -27,4 +27,4 @@ artifacts:
     - app.js
     - package.json
     - config.json
-    - helpers/getRequest.js
+    - getRequest.js

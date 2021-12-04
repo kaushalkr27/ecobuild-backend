@@ -3,7 +3,7 @@ const app = express();
 const port = 7000;
 const config = require("./config.json");
 const https = require("https");
-var getRequest = require('./helpers/getRequest.js');
+var getRequest = require('./getRequest.js');
 
 
 const bodyParser = require('body-parser');
