@@ -26,3 +26,4 @@ artifacts:
   files:
     - app.js
     - package.json
+    - config.json
