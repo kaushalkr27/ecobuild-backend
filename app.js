@@ -45,17 +45,14 @@ app.get("/", (req, res) => {
 });
 
 app.get("/get-articles/:topic", (req, res) => {
-  console.log("hi")
   var topic = req.params["topic"];
-  console.log(topic)
   var url =
     "https://gnews.io/api/v4/search?q=" + topic + "&token=" + config.API_KEY + "&lang=en&country=us";
    var data = getRequest.getRequestTest(url, function(dataTest) {
-    console.log(JSON.parse(dataTest))
     res.send(JSON.parse(dataTest));
   });
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+app.listen(port);
+
+module.exports = app
